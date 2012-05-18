@@ -77,6 +77,8 @@ alias heroku="nocorrect heroku"
 alias git="nocorrect git"
 alias oo="open ."
 alias nanoc="nocorrect nanoc"
+alias cowsay="nocorrect cowsay"
+alias lolcat="nocorrect lolcat"
 
 rm () { mv $* ~/.Trash }
 
@@ -98,3 +100,5 @@ alias pear="php /usr/lib/php/pear/pearcmd.php"
 alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+fortune | cowsay | lolcat

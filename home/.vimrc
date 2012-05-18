@@ -67,7 +67,7 @@ set fdc=0 " Column for folding indicators
 set laststatus=2 " Always show status line
 set t_Co=256 " 256 colors
 set isk+=$ " Add word characters
-set scrolloff=8 "Start scrolling when we're 8 lines away from margins
+set scrolloff=8 " Start scrolling when we're 8 lines away from margins
 set sidescrolloff=15
 set sidescroll=1
 
