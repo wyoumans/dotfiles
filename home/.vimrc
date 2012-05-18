@@ -11,7 +11,7 @@ au BufNewFile,BufRead *.inc set filetype=php " Explicit filetypes
 " Colorscheme
 "let g:solarized_termcolors=256
 "let g:solarized_termtrans = 1
-set background=light
+set background=dark
 colorscheme solarized
 
 " Key mappings for pane selection
@@ -160,8 +160,8 @@ function! SetArrowKeysAsTextShifters()
     vnoremap <silent> <D-Down> <Esc>:call AddEmptyLineBelow()<CR>gv
 
     " insert mode
-    imap <silent> <Left> <C-D>
-    imap <silent> <Right> <C-T>
+    "imap <silent> <Left> <C-D>
+    "imap <silent> <Right> <C-T>
     "inoremap <silent> <Up> <Esc>:call DelEmptyLineAbove()<CR>a
     "inoremap <silent> <Down> <Esc>:call AddEmptyLineAbove()<CR>a
     "inoremap <silent> <D-Up> <Esc>:call DelEmptyLineBelow()<CR>a
@@ -181,4 +181,4 @@ function! SetArrowKeysAsTextShifters()
     " inoremap  <S-Left>   <NOP>
     " inoremap  <S-Right>  <NOP>
 endfunction
-call SetArrowKeysAsTextShifters()
+"call SetArrowKeysAsTextShifters()
