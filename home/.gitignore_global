@@ -1,1 +1,7 @@
-tags
+*~
+.DS_Store
+*.sublime*
+*.komodoproject
+.komodotools
+*.esproj
+*.tags
