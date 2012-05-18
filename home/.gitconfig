@@ -17,12 +17,3 @@
 	com = commit -am
 	ignore = update-index --assume-unchanged
 	unignore = update-index --no-assume-unchanged
-[github]
-	user = klanoma
-	token = 09e2164e154aba0a239824fe043b7bf9
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
