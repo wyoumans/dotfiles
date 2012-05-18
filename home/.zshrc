@@ -24,14 +24,28 @@ ZSH=$HOME/.oh-my-zsh
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi-mode osx)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-#export PATH=/opt/local/bin:/opt/local/sbin:/Users/shaine/.rvm/gems/ruby-1.9.2-p290/bin:/Users/shaine/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/shaine/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/shaine/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/Users/shaine/.rvm/bin:/Users/shaine/.rvm/bin
-export PATH=/usr/local/bin:/opt/local/bin:/opt/local/sbin:$HOME/.rvm/bin:$PATH
-export ZSH=$HOME/.oh-my-zsh
+export PATH=/Users/william/.rvm/gems/ruby-1.9.3-p125/bin:/Users/william/.rvm/gems/ruby-1.9.3-p125@global/bin:/Users/william/.rvm/rubies/ruby-1.9.3-p125/bin:/Users/william/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
+
+function cdf () {
+  CURRFOLDERPATH=$( /usr/bin/osascript <<"    EOT"
+    tell application "Finder"
+      try
+        set currFolder to (folder of the front window as alias)
+      on error
+        set currFolder to (path to desktop folder as alias)
+      end try
+      POSIX path of currFolder
+    end tell
+    EOT
+  )
+  echo "cd to \"$CURRFOLDERPATH\""
+  cd "$CURRFOLDERPATH"
+}
 
 function collapse_pwd {
   echo $(pwd | sed -e "s,^$HOME,~,")
@@ -39,7 +53,8 @@ function collapse_pwd {
 
 function prompt_char {
   git branch >/dev/null 2>/dev/null && echo '±' && return
-  echo '○'
+  hg root >/dev/null 2>/dev/null && echo '☿' && return
+  echo '>'
 }
 
 function battery_charge {
@@ -50,10 +65,26 @@ function virtualenv_info {
   [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
 }
 
-PROMPT='%{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(git_prompt_info)
+function hg_prompt_info {
+  hg prompt --angle-brackets "\
+    < (%{$fg[blue]%}<branch>%{$reset_color%}>)\
+    <@%{$fg[yellow]%}<tags|%{$reset_color%}, %{$fg[yellow]%}>%{$reset_color%}>\
+    %{$fg[red]%}<status|modified|unknown><update>%{$reset_color%}<
+  patches: <patches|join( → )|pre_applied(%{$fg[yellow]%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>" 2>/dev/null
+}
+
+alias heroku="nocorrect heroku"
+alias git="nocorrect git"
+alias oo="open ."
+alias nanoc="nocorrect nanoc"
+
+rm () { mv $* ~/.Trash }
+
+PROMPT='
+%{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
 $(virtualenv_info)$(prompt_char) '
 
-RPROMPT='$VIMODE'
+RPROMPT='$(battery_charge)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" ("
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
@@ -61,35 +92,9 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-[[ -s "$HOME/.zshrc.local" ]] && . "$HOME/.zshrc.local" # Load local ZSH config if it exists
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 alias pear="php /usr/lib/php/pear/pearcmd.php"
 alias pecl="php /usr/lib/php/pear/peclcmd.php"
-alias git-com="nocorrect git-com"
-alias tmux="tmux -2 -u"
-alias phperrors="tail -f /var/log/apache2/error_log"
-alias tmuxcopy="tmux show-buffer | tr -d '\n' | pbcopy"
-alias "tmux ns"="tmux new-session -s "
-alias ls="ls -GF"
 
-tm () { tmux attach-session -t $* || tmux new-session -s $* }
-rm () { mv $* ~/.Trash }
-
-export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
-export LS_OPTIONS='--color=auto'
-export CLICOLOR='Yes'
-export LSCOLORS='exgxfxfxcxdxdxhbadbxbx'
-
-unset RUBYOPT
-
-function zle-keymap-select {
-  VIMODE="${${KEYMAP/vicmd/ command}/(main|viins)/}"
-  zle reset-prompt
-}
-
-zle -N zle-keymap-select
-
-bindkey -v
-
-cd .
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
