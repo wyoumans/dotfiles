@@ -79,6 +79,7 @@ alias oo="open ."
 alias nanoc="nocorrect nanoc"
 alias cowsay="nocorrect cowsay"
 alias lolcat="nocorrect lolcat"
+alias vim="mvim"
 
 rm () { mv $* ~/.Trash }
 
