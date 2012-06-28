@@ -19,6 +19,9 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+nnoremap _ :sp<CR><C-w>j
+nnoremap \| :vsp<CR><C-w>l
+noremap <leader>t :tabe<CR>
 
 " Extra escape bindings
 :imap jj <Esc>
@@ -40,10 +43,32 @@ map <Leader>g :Gstatus<CR>
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
 
+" Gundo configuration
+map <Leader>u :GundoToggle<CR>
+
+" Other bindings
+nmap <silent> // :nohlsearch<CR> " Clear search
+
+let g:user_zen_settings = {
+\  'indentation' : '  ',
+\  'php' : {
+\    'aliases' : {
+\      'req' : 'require '
+\    },
+\    'snippets' : {
+\      'php' : "<?php | ?>",
+\      'yii' : "Yii::app()->",
+\      'yiijs' : "Yii::app()->clientScript->registerScriptFile(\"|\");",
+\      'yiicss' : "Yii::app()->clientScript->registerCssFile(\"|\");",
+\    }
+\  }
+\}
+
 " CtrlP
 let g:ctrlp_working_path_mode = 2
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn|\.DS_Store$'
+let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$\|\.DS_Store$\|assets$\|\.png$\|\.jpg$\|\.gif$\|\.bak$'
+let g:ctrlp_map = '<Leader>f'
+"let g:ctrlp_max_files = 200000
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
