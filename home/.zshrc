@@ -80,6 +80,7 @@ alias nanoc="nocorrect nanoc"
 alias cowsay="nocorrect cowsay"
 alias lolcat="nocorrect lolcat"
 alias thin="nocorrect thin"
+alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 rm () { mv $* ~/.Trash }
 
