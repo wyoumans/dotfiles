@@ -1,20 +1,20 @@
 [user]
-	name = William Youmans
-	email = william@digitaltrike.com
+  name = William Youmans
+  email = william@digitaltrike.com
 [color]
-	ui = auto
+  ui = auto
 [advice]
-	statusHints = false
+  statusHints = false
 [core]
-	whitespace = trailing-space,space-before-tab
-        editor = nano
-	excludesfile = /Users/william/.gitignore_global
+  whitespace = trailing-space,space-before-tab
+  editor = vim
+  excludesfile = /Users/william/.gitignore_global
 [merge]
-	stat = true
+  stat = true
 [alias]
-	st = status
-	co = checkout
-	com = commit -am
-	ignore = update-index --assume-unchanged
-	unignore = update-index --no-assume-unchanged
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  st = status
+  co = checkout
+  com = commit -am
+  ignore = update-index --assume-unchanged
+  unignore = update-index --no-assume-unchanged
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
