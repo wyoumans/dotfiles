@@ -99,13 +99,13 @@ set sidescroll=1
 " Plugin settings
 
 " Undo files
-set history=1000
-set undolevels=1000
-set undofile
-set undodir=~/.vim/tmp/undos//
-set noswapfile
-set nobackup
-set nowb
+" set history=1000
+" set undolevels=1000
+" set undofile
+" set undodir=~/.vim/tmp/undos//
+" set noswapfile
+" set nobackup
+" set nowb
 
 if has("gui_running")
   set guioptions=egmrt
