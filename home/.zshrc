@@ -29,7 +29,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/william/.rvm/gems/ruby-1.9.3-p125/bin:/Users/william/.rvm/gems/ruby-1.9.3-p125@global/bin:/Users/william/.rvm/rubies/ruby-1.9.3-p125/bin:/Users/william/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin
+export PATH=/Users/william/.rvm/gems/ruby-1.9.3-p125/bin:/Users/william/.rvm/gems/ruby-1.9.3-p125@global/bin:/Users/william/.rvm/rubies/ruby-1.9.3-p125/bin:/Users/william/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin
 
 function cdf () {
   CURRFOLDERPATH=$( /usr/bin/osascript <<"    EOT"
@@ -80,6 +80,7 @@ alias nanoc="nocorrect nanoc"
 alias cowsay="nocorrect cowsay"
 alias lolcat="nocorrect lolcat"
 alias thin="nocorrect thin"
+alias subl="nocorrect subl"
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 rm () { mv $* ~/.Trash }
