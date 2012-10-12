@@ -81,6 +81,7 @@ alias cowsay="nocorrect cowsay"
 alias lolcat="nocorrect lolcat"
 alias thin="nocorrect thin"
 alias subl="nocorrect subl"
+alias gitignored="git ls-files -v | grep \"^[a-z]\""
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
 rm () { mv $* ~/.Trash }
