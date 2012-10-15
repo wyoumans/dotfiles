@@ -1,0 +1,2 @@
+#!/bin/sh
+git pull origin master; git checkout alpha; git merge master; git checkout master; git push origin;

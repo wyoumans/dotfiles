@@ -29,7 +29,8 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/william/.rvm/gems/ruby-1.9.3-p125/bin:/Users/william/.rvm/gems/ruby-1.9.3-p125@global/bin:/Users/william/.rvm/rubies/ruby-1.9.3-p125/bin:/Users/william/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/usr/local/php5/bin
+#export PATH=/Users/william/.rvm/gems/ruby-1.9.3-p125/bin:/Users/william/.rvm/gems/ruby-1.9.3-p125@global/bin:/Users/william/.rvm/rubies/ruby-1.9.3-p125/bin:/Users/william/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/usr/local/php5/bin
+export PATH=/usr/local/bin:$HOME/.bin:/opt/local/bin:/opt/local/sbin:$HOME/.rvm/bin:$PATH
 
 function cdf () {
   CURRFOLDERPATH=$( /usr/bin/osascript <<"    EOT"
