@@ -109,7 +109,7 @@ alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-fortune | cowsay -f tux | lolcat
+fortune | cowsay -f tux
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
