@@ -6,3 +6,4 @@
 *.esproj
 *.tags
 thumbs.db
+.idea
