@@ -1,0 +1,17 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Browser Refresh",
+		"DetectSyntax",
+		"HTML Mustache",
+		"Jade",
+		"JsFormat",
+		"Package Control",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"Theme - Soda",
+		"TrailingSpaces"
+	]
+}
