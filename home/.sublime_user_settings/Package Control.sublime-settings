@@ -13,5 +13,9 @@
 		"SublimeCodeIntel",
 		"Theme - Soda",
 		"TrailingSpaces"
+	],
+	"repositories":
+	[
+		"https://sublime.wbond.net/testing/packages.json"
 	]
 }
