@@ -107,7 +107,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}"
 alias pear="php /usr/lib/php/pear/pearcmd.php"
 alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin:/usr/local/share/npm/bin # Add RVM & NPM to PATH for scripting
 
 fortune | cowsay -f tux
 
