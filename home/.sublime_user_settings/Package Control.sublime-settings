@@ -2,15 +2,17 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"Browser Refresh",
 		"DetectSyntax",
 		"DocBlockr",
+		"HTML Mustache",
 		"Jade",
 		"JsFormat",
 		"LESS",
 		"Package Control",
+		"SCSS",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
-		"SublimeLinter",
 		"Theme - Soda",
 		"TrailingSpaces"
 	],
