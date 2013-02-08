@@ -33,7 +33,6 @@ export PATH=/Users/william/.rvm/gems/ruby-1.9.3-p125/bin:/Users/william/.rvm/gem
 
 export YII_ENVIRONMENT=DEVELOPMENT
 export NODE_ENV=local
-export GA_TRACKING=UA-XXXXXXXX-XX
 
 function cdf () {
   CURRFOLDERPATH=$( /usr/bin/osascript <<"    EOT"
