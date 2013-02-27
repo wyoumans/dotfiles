@@ -26,10 +26,7 @@
 		"*.db",
 		"*.scssc",
 		"*.tags",
-		"*.idea",
-		"*.png",
-		"*.gif",
-		"*.jpg"
+		"*.idea"
 	],
 	"folder_exclude_patterns":
 	[
@@ -44,7 +41,8 @@
 		".tags",
 		".idea",
 		".rvmrc",
-		"node_modules"
+		"node_modules",
+		".tmp"
 	],
 	"font_size": 14.0,
 	"highlight_line": true,
