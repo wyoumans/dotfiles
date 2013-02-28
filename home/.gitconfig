@@ -8,7 +8,7 @@
 [core]
   whitespace = trailing-space,space-before-tab
   editor = vim
-  excludesfile = /Users/william/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [merge]
   stat = true
 [alias]

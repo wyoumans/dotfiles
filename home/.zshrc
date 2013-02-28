@@ -33,7 +33,6 @@ export PATH=/Users/william/.rvm/gems/ruby-1.9.3-p125/bin:/Users/william/.rvm/gem
 
 export YII_ENVIRONMENT=DEVELOPMENT
 export NODE_ENV=local
-export GA_TRACKING=UA-XXXXXXXX-XX
 
 function cdf () {
   CURRFOLDERPATH=$( /usr/bin/osascript <<"    EOT"
@@ -81,12 +80,6 @@ alias heroku="nocorrect heroku"
 alias git="nocorrect git"
 alias oo="open ."
 alias nanoc="nocorrect nanoc"
-alias cowsay="nocorrect cowsay"
-alias lolcat="nocorrect lolcat"
-alias npm="nocorrect npm"
-alias node="nocorrect node"
-alias thin="nocorrect thin"
-alias subl="nocorrect subl"
 alias gitignored="git ls-files -v | grep \"^[a-z]\""
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
