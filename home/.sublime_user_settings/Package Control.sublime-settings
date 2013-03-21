@@ -2,9 +2,11 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
+		"Browser Refresh",
 		"DetectSyntax",
 		"DocBlockr",
 		"Gist",
+		"GitGutter",
 		"HTML Mustache",
 		"Jade",
 		"JsFormat",
@@ -14,6 +16,7 @@
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"Theme - Soda",
+		"TidyHTML5",
 		"TrailingSpaces"
 	],
 	"repositories":
