@@ -78,6 +78,9 @@ function hg_prompt_info {
 
 alias heroku="nocorrect heroku"
 alias git="nocorrect git"
+alias gitx="nocorrect gitx"
+alias npm="nocorrect npm"
+alias node="nocorrect node"
 alias oo="open ."
 alias nanoc="nocorrect nanoc"
 alias gitignored="git ls-files -v | grep \"^[a-z]\""
