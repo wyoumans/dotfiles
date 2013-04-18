@@ -29,7 +29,8 @@
 		"*.idea",
 		"*.png",
 		"*.gif",
-		"*.jpg"
+		"*.jpg",
+		"local-main.js"
 	],
 	"folder_exclude_patterns":
 	[
