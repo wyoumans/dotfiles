@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"Browser Refresh",
+		"CSSFormat",
 		"DetectSyntax",
 		"DocBlockr",
 		"Gist",
@@ -10,6 +11,7 @@
 		"HTML Mustache",
 		"Jade",
 		"JsFormat",
+		"JSHint",
 		"LESS",
 		"Package Control",
 		"SCSS",
