@@ -54,10 +54,17 @@
 	"trailing_spaces_highlight_color": "invalid",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
+	"scroll_past_end": true,
+	"wide_caret": true,
 	"word_wrap": false,
 	"todo": {
 		"folder_exclude_patterns": [
 			"vendor"],
-			"result_title": "TODOResults.txt"
-	}
+		"result_title": "TODOResults.txt"
+	},
+	"bold_folder_labels": true,
+	"caret_style": "solid",
+	"create_window_at_startup": false,
+	"ensure_newline_at_eof_on_save": true,
+	"highlight_modified_tabs": true
 }
