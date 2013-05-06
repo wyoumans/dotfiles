@@ -2,8 +2,7 @@
 	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
 	"detect_slow_plugins": false,
 	"draw_white_space": "selection",
-	"file_exclude_patterns":
-	[
+	"file_exclude_patterns": [
 		"*.swp",
 		"*.pyc",
 		"*.pyo",
@@ -30,10 +29,8 @@
 		"*.png",
 		"*.gif",
 		"*.jpg",
-		"local-main.js"
-	],
-	"folder_exclude_patterns":
-	[
+		"local-main.js"],
+	"folder_exclude_patterns": [
 		".svn",
 		".git",
 		".hg",
@@ -46,13 +43,10 @@
 		".idea",
 		".rvmrc",
 		"node_modules",
-		".tmp"
-	],
+		".tmp"],
 	"font_size": 14.0,
 	"highlight_line": true,
-	"ignored_packages":
-	[
-	],
+	"ignored_packages": [],
 	"save_on_focus_lost": true,
 	"tab_size": 2,
 	"theme": "Soda Dark.sublime-theme",
@@ -60,5 +54,10 @@
 	"trailing_spaces_highlight_color": "invalid",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false
+	"word_wrap": false,
+	"todo": {
+		"folder_exclude_patterns": [
+			"vendor"],
+			"result_title": "TODOResults.txt"
+	}
 }
