@@ -14,6 +14,8 @@
 [alias]
   st = status
   co = checkout
+  cleanup = !git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d
+  undo = reset --soft HEAD^
   ignore = update-index --assume-unchanged
   unignore = update-index --no-assume-unchanged
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
