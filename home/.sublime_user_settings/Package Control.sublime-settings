@@ -3,6 +3,7 @@
 	"installed_packages":
 	[
 		"AngularJS",
+		"CoffeeScript",
 		"DetectSyntax",
 		"DocBlockr",
 		"GitGutter",
