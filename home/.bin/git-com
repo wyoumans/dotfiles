@@ -1,6 +1,6 @@
 #!/bin/bash
 MSG=$*
-git add .
+git add --all .
 if [[ $? -eq 0 ]]; then
-        git commit -am "${MSG}"
+        git commit -m "${MSG}"
 fi
