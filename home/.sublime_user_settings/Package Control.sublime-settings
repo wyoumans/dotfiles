@@ -2,15 +2,14 @@
 	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
-		"AngularJS",
 		"CoffeeScript",
-		"DetectSyntax",
 		"DocBlockr",
 		"GitGutter",
 		"HTML Mustache",
 		"Jade",
 		"JsFormat",
 		"LESS",
+		"Nodejs",
 		"Package Control",
 		"SCSS",
 		"SideBarEnhancements",
