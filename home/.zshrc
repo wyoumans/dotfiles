@@ -85,8 +85,11 @@ alias oo="open ."
 alias nanoc="nocorrect nanoc"
 alias gitignored="git ls-files -v | grep \"^[a-z]\""
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+alias tmux="tmux -2 -u"
+alias tmuxcopy="tmux show-buffer | tr -d '\n' | pbcopy"
 
 rm () { mv $* ~/.Trash }
+tm () { if [[ -z $* ]]; then tmux ls; else tmux attach-session -d -t $* || tmux new-session -s $*; fi }
 
 PROMPT='
 %{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
