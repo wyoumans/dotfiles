@@ -51,6 +51,7 @@
 		".idea",
 		".rvmrc",
 		"node_modules",
+		"bower_components",
 		".tmp"
 	],
 	"font_size": 14.0,
@@ -58,6 +59,7 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"SideBarEnhancements"
 	],
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
