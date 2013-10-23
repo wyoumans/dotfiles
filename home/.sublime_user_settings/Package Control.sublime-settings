@@ -4,6 +4,7 @@
 	[
 		"CoffeeScript",
 		"DocBlockr",
+		"EJS",
 		"GitGutter",
 		"HTML Mustache",
 		"Jade",

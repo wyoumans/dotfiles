@@ -34,7 +34,8 @@
 		"*.png",
 		"*.gif",
 		"*.jpg",
-		"local-main.js"
+		"local-main.js",
+		"*-compiled.*"
 	],
 	"folder_exclude_patterns":
 	[
