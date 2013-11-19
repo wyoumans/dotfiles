@@ -115,4 +115,4 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 #NVM
 . ~/.nvm/nvm.sh
-nvm use v0.10.7
+nvm use v0.10.22
