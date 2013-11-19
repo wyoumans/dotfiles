@@ -52,7 +52,8 @@
 		".rvmrc",
 		"node_modules",
 		"bower_components",
-		".tmp"
+		".tmp",
+		"blog"
 	],
 	"font_size": 14.0,
 	"highlight_line": true,
