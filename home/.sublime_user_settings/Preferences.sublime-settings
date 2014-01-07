@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_style": "solid",
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Dark).tmTheme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
 	"create_window_at_startup": false,
 	"detect_slow_plugins": false,
 	"draw_white_space": "selection",
@@ -65,7 +65,7 @@
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
 	"tab_size": 2,
-	"theme": "Soda Dark.sublime-theme",
+	"theme": "Spacegray Eighties.sublime-theme",
 	"todo":
 	{
 		"folder_exclude_patterns":
