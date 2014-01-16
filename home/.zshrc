@@ -85,9 +85,6 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 alias tmux="tmux -2 -u"
 alias tmuxcopy="tmux show-buffer | tr -d '\n' | pbcopy"
 
-rm () { mv $* ~/.Trash }
-tm () { if [[ -z $* ]]; then tmux ls; else tmux attach-session -d -t $* || tmux new-session -s $*; fi }
-
 PROMPT='
 %{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
 $(virtualenv_info)$(prompt_char) '
@@ -105,12 +102,3 @@ alias pear="php /usr/lib/php/pear/pearcmd.php"
 alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
 PATH=$PATH:$HOME/.rvm/bin:/usr/local/share/npm/bin # Add RVM & NPM to PATH for scripting
-
-fortune | cowsay -f tux
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-#NVM
-. ~/.nvm/nvm.sh
-nvm use v0.10.22
