@@ -1,1 +1,4 @@
+home/.vim/tmp/*
+home/.vim/.netrwhist
+home/tmux-*.log
 home/.sublime_user_settings/Package Control.last-run

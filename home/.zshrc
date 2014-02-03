@@ -31,9 +31,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=/Users/william/.rvm/gems/ruby-1.9.3-p125/bin:/Users/william/.rvm/gems/ruby-1.9.3-p125@global/bin:/Users/william/.rvm/rubies/ruby-1.9.3-p125/bin:/Users/william/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/usr/local/php5/bin:$HOME/.bin
 
-export YII_ENVIRONMENT=DEVELOPMENT
-export NODE_ENV=local
-
 function cdf () {
   CURRFOLDERPATH=$( /usr/bin/osascript <<"    EOT"
     tell application "Finder"
@@ -88,9 +85,6 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 alias tmux="tmux -2 -u"
 alias tmuxcopy="tmux show-buffer | tr -d '\n' | pbcopy"
 
-rm () { mv $* ~/.Trash }
-tm () { if [[ -z $* ]]; then tmux ls; else tmux attach-session -d -t $* || tmux new-session -s $*; fi }
-
 PROMPT='
 %{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
 $(virtualenv_info)$(prompt_char) '
@@ -101,18 +95,10 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+[[ -s "$HOME/.zshrc.local" ]] && . "$HOME/.zshrc.local" # Load local ZSH config if it exists
 
 alias pear="php /usr/lib/php/pear/pearcmd.php"
 alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
 PATH=$PATH:$HOME/.rvm/bin:/usr/local/share/npm/bin # Add RVM & NPM to PATH for scripting
-
-fortune | cowsay -f tux
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-#NVM
-. ~/.nvm/nvm.sh
-nvm use v0.10.22
