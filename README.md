@@ -1,4 +1,4 @@
-# Klanoma Dotfiles
+# Will's Dotfiles
 
 ## Introduction
 My dotfiles are managed by [homesick](https://github.com/technicalpickles/homesick).
