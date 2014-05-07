@@ -23,3 +23,6 @@
   default = matching
 [http]
 	postBuffer = 1024288000
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f

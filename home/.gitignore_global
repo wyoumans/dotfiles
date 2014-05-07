@@ -8,3 +8,5 @@
 thumbs.db
 .idea
 *.swp
+Vagrantfile
+.vagrant
