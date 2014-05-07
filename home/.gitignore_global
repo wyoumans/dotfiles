@@ -1,12 +1,20 @@
+# Misc Mac Stuff
 *~
 .DS_Store
+
+# Text Editor Stuff
 *.sublime*
 *.komodoproject
 .komodotools
 *.esproj
 *.tags
-thumbs.db
 .idea
 *.swp
+
+# Windows Stuff
+thumbs.db
+
+# Vagrant VM Stuff
 Vagrantfile
 .vagrant
+bootstrap.sh
