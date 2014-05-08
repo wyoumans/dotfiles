@@ -15,6 +15,4 @@
 thumbs.db
 
 # Vagrant VM Stuff
-Vagrantfile
 .vagrant
-bootstrap.sh
