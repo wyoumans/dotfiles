@@ -73,13 +73,9 @@ function hg_prompt_info {
   patches: <patches|join( → )|pre_applied(%{$fg[yellow]%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>" 2>/dev/null
 }
 
-alias heroku="nocorrect heroku"
 alias git="nocorrect git"
 alias gitx="nocorrect gitx"
-alias npm="nocorrect npm"
-alias node="nocorrect node"
 alias oo="open ."
-alias nanoc="nocorrect nanoc"
 alias gitignored="git ls-files -v | grep \"^[a-z]\""
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias tmux="tmux -2 -u"
