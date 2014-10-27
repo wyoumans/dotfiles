@@ -1,12 +1,6 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#export ZSH_THEME="random"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -29,7 +23,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/Users/william/.rvm/gems/ruby-1.9.3-p125/bin:/Users/william/.rvm/gems/ruby-1.9.3-p125@global/bin:/Users/william/.rvm/rubies/ruby-1.9.3-p125/bin:/Users/william/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/usr/local/php5/bin:$HOME/.bin
+export PATH=/Users/william/.rvm/gems/ruby-2.1.3/bin:/Users/william/.rvm/gems/ruby-2.1.3@global/bin:/Users/william/.rvm/rubies/ruby-1.9.3-p125/bin:/Users/william/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/usr/local/php5/bin:$HOME/.bin
 
 function cdf () {
   CURRFOLDERPATH=$( /usr/bin/osascript <<"    EOT"
