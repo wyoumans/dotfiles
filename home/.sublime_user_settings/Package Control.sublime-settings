@@ -1,27 +1,20 @@
 {
-	"auto_upgrade_last_run": null,
 	"installed_packages":
 	[
-		"CoffeeScript",
+		"Alignment",
 		"DocBlockr",
 		"EJS",
-		"Emmet",
 		"GitGutter",
+		"Haml",
 		"HTML Mustache",
 		"Jade",
 		"JsFormat",
 		"LESS",
-		"Package Control",
-		"Phpcs",
 		"SCSS",
-		"SideBarEnhancements",
 		"SublimeCodeIntel",
+		"Theme - Cobalt2",
 		"Theme - Soda",
 		"Theme - Spacegray",
 		"TrailingSpaces"
-	],
-	"repositories":
-	[
-		"https://sublime.wbond.net/testing/packages.json"
 	]
 }

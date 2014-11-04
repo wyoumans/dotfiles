@@ -5,5 +5,7 @@ My dotfiles are managed by [homesick](https://github.com/technicalpickles/homesi
 
 ## Special instructions
 ### Sublime symlinks
-`rm ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User`
-`ln -s ~/.sublime_user_settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User`
+```
+rm ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+ln -s ~/.sublime_user_settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+```
