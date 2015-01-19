@@ -75,6 +75,9 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 alias tmux="tmux -2 -u"
 alias tmuxcopy="tmux show-buffer | tr -d '\n' | pbcopy"
 
+alias pear="php /usr/lib/php/pear/pearcmd.php"
+alias pecl="php /usr/lib/php/pear/peclcmd.php"
+
 PROMPT='
 %{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
 $(virtualenv_info)$(prompt_char) '
@@ -87,9 +90,6 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 [[ -s "$HOME/.zshrc.local" ]] && . "$HOME/.zshrc.local" # Load local ZSH config if it exists
-
-alias pear="php /usr/lib/php/pear/pearcmd.php"
-alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
 PATH=$PATH:$HOME/.rvm/bin:/usr/local/share/npm/bin # Add RVM & NPM to PATH for scripting
 
