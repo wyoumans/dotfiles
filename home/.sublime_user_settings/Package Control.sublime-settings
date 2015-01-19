@@ -1,4 +1,12 @@
 {
+	"in_process_packages":
+	[
+	],
+	"installed_dependencies":
+	[
+		"0_package_control_loader",
+		"bz2"
+	],
 	"installed_packages":
 	[
 		"Alignment",
@@ -10,8 +18,11 @@
 		"Jade",
 		"JsFormat",
 		"LESS",
+		"Less2Css",
+		"Package Control",
 		"SCSS",
 		"SublimeCodeIntel",
+		"SublimeLinter-contrib-eslint",
 		"Theme - Cobalt2",
 		"Theme - Soda",
 		"Theme - Spacegray",
