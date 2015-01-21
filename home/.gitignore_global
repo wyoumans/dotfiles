@@ -3,7 +3,7 @@
 .DS_Store
 
 # Text Editor Stuff
-*.sublime*
+*.sublime-workspace
 *.komodoproject
 .komodotools
 *.esproj
