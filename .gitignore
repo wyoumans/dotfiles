@@ -2,3 +2,7 @@ home/.vim/tmp/*
 home/.vim/.netrwhist
 home/tmux-*.log
 home/.sublime_user_settings/Package Control.last-run
+home/.sublime_user_settings/Package Control.cache
+home/.sublime_user_settings/Package Control.merged-ca-bundle
+home/.sublime_user_settings/Package Control.system-ca-bundle
+home/.sublime_user_settings/Package Control.user-ca-bundle
