@@ -48,7 +48,6 @@
 		".idea",
 		".rvmrc",
 		"node_modules",
-		"bower_components",
 		".tmp",
 		"blog"
 	],

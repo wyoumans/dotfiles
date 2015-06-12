@@ -16,3 +16,10 @@ thumbs.db
 
 # Vagrant VM Stuff
 .vagrant
+
+node_modules
+
+# TEMP
+# .ruby*
+# Gemfile*
+# .ruby-gemset

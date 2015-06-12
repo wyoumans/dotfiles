@@ -8,7 +8,7 @@
 [core]
   whitespace = trailing-space,space-before-tab
   editor = vim
-	excludesfile = /Users/william/.gitignore_global
+  excludesfile = /Users/william/.gitignore_global
 [merge]
   stat = true
 [alias]
@@ -22,14 +22,14 @@
 [push]
   default = matching
 [http]
-	postBuffer = 1024288000
+  postBuffer = 1024288000
 [filter "media"]
-	required = true
+  required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
