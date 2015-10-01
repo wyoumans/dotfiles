@@ -91,6 +91,3 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}"
 [[ -s "$HOME/.zshrc.local" ]] && . "$HOME/.zshrc.local" # Load local ZSH config if it exists
 
 PATH=$PATH:/usr/local/share/npm/bin # Add NPM to PATH for scripting
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
