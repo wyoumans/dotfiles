@@ -48,8 +48,7 @@
 		".idea",
 		".rvmrc",
 		"node_modules",
-		".tmp",
-		"blog"
+		".tmp"
 	],
 	"font_face": "Menlo",
 	"font_size": 14.0,
