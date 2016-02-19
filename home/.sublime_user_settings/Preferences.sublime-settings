@@ -48,7 +48,10 @@
 		".idea",
 		".rvmrc",
 		"node_modules",
-		".tmp"
+		".tmp",
+		"app/storage/",
+		"storage/",
+		"vendor/"
 	],
 	"font_face": "Menlo",
 	"font_size": 14.0,
