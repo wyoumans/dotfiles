@@ -32,7 +32,8 @@
 		"*.gif",
 		"*.jpg",
 		"local-main.js",
-		"*-compiled.*"
+		"*-compiled.*",
+		".vagrant"
 	],
 	"folder_exclude_patterns":
 	[
