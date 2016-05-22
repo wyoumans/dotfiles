@@ -52,7 +52,7 @@
 		".tmp",
 		"app/storage/",
 		"storage/",
-		"vendor/"
+		"vendor"
 	],
 	"font_face": "Menlo",
 	"font_size": 14.0,
