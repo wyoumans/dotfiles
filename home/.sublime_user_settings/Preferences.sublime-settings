@@ -52,7 +52,6 @@
 		".tmp",
 		"app/storage/",
 		"storage/",
-		"vendor/*",
 		"platforms/*"
 	],
 	"font_face": "Menlo",
