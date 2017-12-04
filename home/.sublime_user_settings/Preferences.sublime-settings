@@ -64,6 +64,7 @@
 	],
 	"save_on_focus_lost": true,
 	"scroll_past_end": true,
+	"show_panel_on_build": true,
 	"tab_size": 2,
 	"theme": "Cobalt2.sublime-theme",
 	"trailing_spaces_file_max_size": 1000,

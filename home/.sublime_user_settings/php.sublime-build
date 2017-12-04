@@ -1,0 +1,5 @@
+{
+    "path": "$HOME/.composer/vendor/bin",
+    "shell_cmd": "php-cs-fixer fix '$file' --rules=@PSR2",
+    "show_panel_on_build": false
+}
