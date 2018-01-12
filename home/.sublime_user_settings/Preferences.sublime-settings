@@ -1,6 +1,5 @@
 {
 	"color_scheme": "Packages/Agila Theme/Agila Cobalt.tmTheme",
-	"theme_agila_sidebar_small": true,
 	"create_window_at_startup": false,
 	"draw_white_space": "selection",
 	"ensure_newline_at_eof_on_save": true,
@@ -70,6 +69,7 @@
 	"show_panel_on_build": true,
 	"tab_size": 4,
 	"theme": "Agila Cobalt.sublime-theme",
+	"theme_agila_sidebar_small": true,
 	"trailing_spaces_file_max_size": 1000,
 	"trailing_spaces_highlight_color": "invalid",
 	"translate_tabs_to_spaces": true,
