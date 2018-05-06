@@ -54,7 +54,8 @@
 		"storage/",
 		"platforms/*",
 		"install-stubs",
-		"vendor"
+		"vendor",
+		"spark"
 	],
 	"font_face": "Menlo",
 	"font_size": 14.0,

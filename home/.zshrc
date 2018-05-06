@@ -102,16 +102,37 @@ function hg_prompt_info {
   patches: <patches|join( → )|pre_applied(%{$fg[yellow]%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>" 2>/dev/null
 }
 
+function openpr() {
+  br=`git branch | grep "*"`
+  repo=$1
+  parentBranch=$2
+
+  open -a /Applications/Google\ Chrome.app  https://github.com/${repo/* /}/compare/${parentBranch/* /}...themsaid:${br/* /}\?expand\=1
+}
+
 alias git="nocorrect git"
-alias gitx="nocorrect gitx"
 alias oo="open ."
 alias gitignored="git ls-files -v | grep \"^[a-z]\""
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 alias tmux="tmux -2 -u"
 alias tmuxcopy="tmux show-buffer | tr -d '\n' | pbcopy"
-
+alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
+alias reloadcli="source $HOME/.zshrc"
 alias pear="php /usr/lib/php/pear/pearcmd.php"
 alias pecl="php /usr/lib/php/pear/peclcmd.php"
+
+# Laravel Aliases
+artisan() {
+  if [ -f bin/artisan ]; then
+    php bin/artisan "$@"
+  else
+    php artisan "$@"
+  fi
+}
+
+alias art="php artisan"
+alias m="php artisan migrate"
+alias tinker="php artisan tinker"
 
 PROMPT='
 %{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
