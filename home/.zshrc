@@ -111,6 +111,8 @@ function openpr() {
 }
 
 alias git="nocorrect git"
+alias nah="git reset --hard && git clean -fd"
+
 alias oo="open ."
 alias gitignored="git ls-files -v | grep \"^[a-z]\""
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
@@ -133,6 +135,10 @@ artisan() {
 alias art="php artisan"
 alias m="php artisan migrate"
 alias tinker="php artisan tinker"
+
+# Homestead
+alias edithomestead='subl ~/.Homestead/Homestead.yaml'
+alias updatehomestead='cd ~/.Homestead && vagrant box update && git pull origin master'
 
 PROMPT='
 %{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
