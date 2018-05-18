@@ -102,14 +102,6 @@ function hg_prompt_info {
   patches: <patches|join( → )|pre_applied(%{$fg[yellow]%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>" 2>/dev/null
 }
 
-function openpr() {
-  br=`git branch | grep "*"`
-  repo=$1
-  parentBranch=$2
-
-  open -a /Applications/Google\ Chrome.app  https://github.com/${repo/* /}/compare/${parentBranch/* /}...themsaid:${br/* /}\?expand\=1
-}
-
 alias git="nocorrect git"
 alias nah="git reset --hard && git clean -fd"
 
