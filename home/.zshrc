@@ -76,32 +76,6 @@ function cdf () {
   cd "$CURRFOLDERPATH"
 }
 
-function collapse_pwd {
-  echo $(pwd | sed -e "s,^$HOME,~,")
-}
-
-function prompt_char {
-  git branch >/dev/null 2>/dev/null && echo '±' && return
-  hg root >/dev/null 2>/dev/null && echo '☿' && return
-  echo '>'
-}
-
-function battery_charge {
-  echo `$BAT_CHARGE` 2>/dev/null
-}
-
-function virtualenv_info {
-  [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
-}
-
-function hg_prompt_info {
-  hg prompt --angle-brackets "\
-    < (%{$fg[blue]%}<branch>%{$reset_color%}>)\
-    <@%{$fg[yellow]%}<tags|%{$reset_color%}, %{$fg[yellow]%}>%{$reset_color%}>\
-    %{$fg[red]%}<status|modified|unknown><update>%{$reset_color%}<
-  patches: <patches|join( → )|pre_applied(%{$fg[yellow]%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>" 2>/dev/null
-}
-
 alias git="nocorrect git"
 alias nah="git reset --hard && git clean -fd"
 
@@ -115,32 +89,12 @@ alias reloadcli="source $HOME/.zshrc"
 alias pear="php /usr/lib/php/pear/pearcmd.php"
 alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
-# Laravel Aliases
-artisan() {
-  if [ -f bin/artisan ]; then
-    php bin/artisan "$@"
-  else
-    php artisan "$@"
-  fi
-}
-
 alias art="php artisan"
-alias m="php artisan migrate"
 alias tinker="php artisan tinker"
 
 # Homestead
 alias edithomestead='subl ~/.Homestead/Homestead.yaml'
 alias updatehomestead='cd ~/.Homestead && vagrant box update && git pull origin master'
-
-PROMPT='
-%{$fg[blue]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}$(hg_prompt_info)$(git_prompt_info)
-$(virtualenv_info)$(prompt_char) '
-
-ZSH_THEME_GIT_PROMPT_PREFIX=" ("
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[red]%}"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}"
 
 [[ -s "$HOME/.zshrc.local" ]] && . "$HOME/.zshrc.local" # Load local ZSH config if it exists
 
