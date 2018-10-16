@@ -30,6 +30,12 @@ prompt_segment() {
   [[ -n $3 ]] && echo -n $3
 }
 
+function prompt_char {
+  git branch >/dev/null 2>/dev/null && echo '\n ±' && return
+  hg root >/dev/null 2>/dev/null && echo '\n ☿' && return
+  echo '\n >'
+}
+
 # End the prompt, closing any open segments
 prompt_end() {
   if [[ -n $CURRENT_BG ]]; then
@@ -97,6 +103,7 @@ build_prompt() {
   prompt_dir
   prompt_git
   prompt_end
+  prompt_char
 }
 
 PROMPT='%{%f%b%k%}$(build_prompt) '
