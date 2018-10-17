@@ -76,6 +76,13 @@ function cdf () {
   cd "$CURRFOLDERPATH"
 }
 
+function clearcaches () {
+  art config:clear
+  art route:clear
+  art view:clear
+  art cache:clear
+}
+
 alias git="nocorrect git"
 alias nah="git reset --hard && git clean -fd"
 
