@@ -77,10 +77,10 @@ function cdf () {
 }
 
 function clearcaches () {
-  art config:clear
-  art route:clear
-  art view:clear
-  art cache:clear
+  php artisan config:clear
+  php artisan route:clear
+  php artisan view:clear
+  php artisan cache:clear
 }
 
 alias git="nocorrect git"
