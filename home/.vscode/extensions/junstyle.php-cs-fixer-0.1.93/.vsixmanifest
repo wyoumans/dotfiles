@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="php-cs-fixer" Version="0.1.89" Publisher="junstyle"/>
+    <Identity Language="en-US" Id="php-cs-fixer" Version="0.1.93" Publisher="junstyle"/>
     <DisplayName>php cs fixer</DisplayName>
     <Description xml:space="preserve">PHP CS Fixer extension for VS Code, php formatter, php code beautify tool</Description>
     <Tags>php</Tags>
