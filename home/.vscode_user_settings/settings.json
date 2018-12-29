@@ -30,5 +30,7 @@
     "php-cs-fixer.lastDownload": 1546025862534,
     "php-cs-fixer.formatHtml": true,
     "php-cs-fixer.onsave": true,
-    "php-cs-fixer.config": "/Users/william/.homesick/dotfiles/home/.vscode/.php_cs"
+    "php-cs-fixer.config": "/Users/william/.homesick/dotfiles/home/.vscode/.php_cs",
+    "editor.tabCompletion": "on",
+    "diffEditor.renderSideBySide": false
 }
