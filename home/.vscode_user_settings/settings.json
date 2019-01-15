@@ -36,5 +36,8 @@
     "diffEditor.renderSideBySide": false,
     "window.openFilesInNewWindow": "on",
     "terminal.integrated.fontSize": 15,
-    "html.format.wrapLineLength": 0
+    "html.format.wrapLineLength": 0,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.editor.enablePreview": false,
+    "workbench.settings.editor": "json"
 }
