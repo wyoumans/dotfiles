@@ -39,5 +39,6 @@
     "html.format.wrapLineLength": 0,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "workbench.editor.enablePreview": false,
-    "workbench.settings.editor": "json"
+    "workbench.settings.editor": "json",
+    "window.zoomLevel": 0
 }
