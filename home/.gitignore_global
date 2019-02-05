@@ -4,8 +4,7 @@
 
 # Text Editor Stuff
 *.sublime-workspace
-*.komodoproject
-.komodotools
+.vscode
 *.esproj
 *.tags
 .idea
@@ -19,7 +18,3 @@ thumbs.db
 
 node_modules
 
-# TEMP
-# .ruby*
-# Gemfile*
-# .ruby-gemset
