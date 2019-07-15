@@ -81,6 +81,7 @@ function clearcaches () {
   php artisan route:clear
   php artisan view:clear
   php artisan cache:clear
+  rm -f storage/logs/*
 }
 
 alias git="nocorrect git"
