@@ -18,6 +18,8 @@
     "editor.tabSize": 4,
     "files.trimTrailingWhitespace": true,
     "editor.formatOnPaste": true,
+    "editor.tabCompletion": true,
+    "editor.formatOnSave": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "files.exclude": {
@@ -31,7 +33,6 @@
     "php-cs-fixer.formatHtml": true,
     "php-cs-fixer.onsave": true,
     "php-cs-fixer.config": "/Users/william/.homesick/dotfiles/home/.vscode/.php_cs",
-    "editor.tabCompletion": "on",
     "diffEditor.renderSideBySide": false,
     "window.openFilesInNewWindow": "on",
     "terminal.integrated.fontSize": 15,
