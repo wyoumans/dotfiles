@@ -93,15 +93,17 @@ alias tmux="tmux -2 -u"
 alias tmuxcopy="tmux show-buffer | tr -d '\n' | pbcopy"
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
-alias pear="php /usr/lib/php/pear/pearcmd.php"
-alias pecl="php /usr/lib/php/pear/peclcmd.php"
 
 alias art="php artisan"
 alias tinker="php artisan tinker"
 
 # Homestead
 alias edithomestead='subl ~/.Homestead/Homestead.yaml'
-alias updatehomestead='cd ~/.Homestead && vagrant box update && git pull origin master'
+alias updatehomestead='cd ~/.Homestead && vagrant box update && git checkout release && git pull origin release'
+
+function homestead() {
+  ( cd ~/.Homestead && vagrant $* )
+}
 
 [[ -s "$HOME/.zshrc.local" ]] && . "$HOME/.zshrc.local" # Load local ZSH config if it exists
 
