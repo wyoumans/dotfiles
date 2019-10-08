@@ -17,9 +17,11 @@
     "editor.scrollBeyondLastLine": true,
     "editor.tabSize": 4,
     "files.trimTrailingWhitespace": true,
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.tabCompletion": true,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
+    "editor.formatOnSaveTimeout": 5000,
+    "editor.formatOnType": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "files.exclude": {
@@ -42,6 +44,5 @@
     "workbench.editor.enablePreview": false,
     "workbench.settings.editor": "json",
     "window.zoomLevel": 0,
-    "phpcs.executablePath": "/Users/william/.composer/vendor/bin/phpcs",
-    "editor.formatOnSaveTimeout": 5000
+    "phpcs.executablePath": "/Users/william/.composer/vendor/bin/phpcs"
 }
