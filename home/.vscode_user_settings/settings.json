@@ -42,5 +42,6 @@
     "workbench.editor.enablePreview": false,
     "workbench.settings.editor": "json",
     "window.zoomLevel": 0,
-    "phpcs.executablePath": "/Users/william/.composer/vendor/bin/phpcs"
+    "phpcs.executablePath": "/Users/william/.composer/vendor/bin/phpcs",
+    "editor.formatOnSaveTimeout": 5000
 }
