@@ -44,5 +44,18 @@
     "workbench.editor.enablePreview": false,
     "workbench.settings.editor": "json",
     "window.zoomLevel": 0,
-    "phpcs.executablePath": "/Users/william/.composer/vendor/bin/phpcs"
+    "phpcs.executablePath": "/Users/william/.composer/vendor/bin/phpcs",
+    "yaml.schemas": {
+        "file:///Users/william/.vscode/extensions/atlassian.atlascode-2.2.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "atlascode.jira.jqlList": [
+        {
+            "id": "628b3ee0-cead-43f9-a830-f61b066d8fca",
+            "enabled": true,
+            "name": "My onlinemeded Issues",
+            "query": "assignee = currentUser() ORDER BY lastViewed DESC ",
+            "siteId": "53d7492f-eb15-4839-b6cd-c83e05b38774",
+            "monitor": true
+        }
+    ]
 }

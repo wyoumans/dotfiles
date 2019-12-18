@@ -83,6 +83,14 @@ function clearcaches () {
   php artisan cache:clear
 }
 
+function ssh1 () {
+  ssh forge@"${1}" -o "proxycommand ssh -W %h:%p will@bastion1"
+}
+
+function ssh2 () {
+  ssh forge@"${1}" -o "proxycommand ssh -W %h:%p will@bastion2"
+}
+
 alias git="nocorrect git"
 alias nah="git reset --hard && git clean -fd"
 
