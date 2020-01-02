@@ -91,6 +91,10 @@ function ssh2 () {
   ssh forge@"${1}" -o "proxycommand ssh -W %h:%p will@bastion2"
 }
 
+function getIP () {
+  ssh will@omepf cat /var/www/html/instancesPublic.csv | grep ${1} | awk -F “,” ‘{print $3}’
+}
+
 alias git="nocorrect git"
 alias nah="git reset --hard && git clean -fd"
 

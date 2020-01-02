@@ -50,7 +50,7 @@
     },
     "atlascode.jira.jqlList": [
         {
-            "id": "628b3ee0-cead-43f9-a830-f61b066d8fca",
+            "id": "98459e21-f3da-460e-bf8b-2d609115719f",
             "enabled": true,
             "name": "My onlinemeded Issues",
             "query": "assignee = currentUser() ORDER BY lastViewed DESC ",
