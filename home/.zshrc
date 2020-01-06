@@ -92,7 +92,7 @@ function ssh2 () {
 }
 
 function getIP () {
-  ssh will@omepf cat /var/www/html/instancesPublic.csv | grep ${1} | awk -F “,” ‘{print $3}’
+  ssh will@omepf cat /var/www/html/instancesPublic.csv | grep ${1} | awk -F "," '{print $3}'
 }
 
 alias git="nocorrect git"
