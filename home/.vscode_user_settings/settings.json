@@ -46,7 +46,7 @@
     "window.zoomLevel": 0,
     "phpcs.executablePath": "/Users/william/.composer/vendor/bin/phpcs",
     "yaml.schemas": {
-        "file:///Users/william/.vscode/extensions/atlassian.atlascode-2.3.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/william/.vscode/extensions/atlassian.atlascode-2.6.6/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "atlascode.jira.jqlList": [
         {
@@ -57,5 +57,8 @@
             "siteId": "53d7492f-eb15-4839-b6cd-c83e05b38774",
             "monitor": true
         }
-    ]
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
 }
