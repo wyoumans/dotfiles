@@ -17,11 +17,11 @@
     "editor.scrollBeyondLastLine": true,
     "editor.tabSize": 4,
     "files.trimTrailingWhitespace": true,
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": false,
     "editor.tabCompletion": true,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.formatOnSaveTimeout": 5000,
-    "editor.formatOnType": true,
+    "editor.formatOnType": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "files.exclude": {
@@ -30,8 +30,8 @@
         "vendor": true,
         "spark": true
     },
-    "php-cs-fixer.executablePath": "php-cs-fixer",
-    "php-cs-fixer.lastDownload": 1546025862534,
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.lastDownload": 1624044351776,
     "php-cs-fixer.formatHtml": true,
     "php-cs-fixer.onsave": true,
     "php-cs-fixer.config": "/Users/william/.homesick/dotfiles/home/.vscode/.php_cs",
@@ -60,5 +60,8 @@
     ],
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
     }
 }

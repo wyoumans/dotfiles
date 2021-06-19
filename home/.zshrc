@@ -94,6 +94,8 @@ alias tmuxcopy="tmux show-buffer | tr -d '\n' | pbcopy"
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
 
+alias sail='bash vendor/bin/sail'
+
 alias art="php artisan"
 alias tinker="php artisan tinker"
 
