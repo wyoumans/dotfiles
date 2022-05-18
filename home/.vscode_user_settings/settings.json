@@ -17,10 +17,11 @@
     "editor.scrollBeyondLastLine": true,
     "editor.tabSize": 4,
     "files.trimTrailingWhitespace": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active",
     "editor.formatOnPaste": false,
-    "editor.tabCompletion": true,
+    "editor.tabCompletion": "onlySnippets",
     "editor.formatOnSave": false,
-    "editor.formatOnSaveTimeout": 5000,
     "editor.formatOnType": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
@@ -43,7 +44,6 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "workbench.editor.enablePreview": false,
     "workbench.settings.editor": "json",
-    "window.zoomLevel": 0,
     "phpcs.executablePath": "/Users/william/.composer/vendor/bin/phpcs",
     "yaml.schemas": {
         "file:///Users/william/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
@@ -63,5 +63,8 @@
     },
     "[vue]": {
         "editor.defaultFormatter": "octref.vetur"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
