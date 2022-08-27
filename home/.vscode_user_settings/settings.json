@@ -32,7 +32,7 @@
         "spark": true
     },
     "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-    "php-cs-fixer.lastDownload": 1624044351776,
+    "php-cs-fixer.lastDownload": 1660349981600,
     "php-cs-fixer.formatHtml": true,
     "php-cs-fixer.onsave": true,
     "php-cs-fixer.config": "/Users/william/.homesick/dotfiles/home/.vscode/.php_cs",
