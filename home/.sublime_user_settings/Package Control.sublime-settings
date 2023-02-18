@@ -19,7 +19,6 @@
 		"Laravel Blade Highlighter",
 		"LESS",
 		"Material Theme",
-		"Nunjucks Syntax",
 		"Origami",
 		"Package Control",
 		"Pug",
@@ -29,6 +28,7 @@
 		"SublimeLinter",
 		"TrailingSpaces",
 		"TypeScript",
-		"Vue Syntax Highlight"
-	]
+		"Vue Syntax Highlight",
+		"Nunjucks"
+	],
 }
