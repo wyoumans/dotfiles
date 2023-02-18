@@ -111,9 +111,3 @@ function homestead() {
 
 PATH=$PATH:/usr/local/share/npm/bin # Add NPM to PATH for scripting
 PATH=$PATH:/usr/local/opt/python@3.9/Frameworks/Python.framework/Versions/3.9/bin:/Users/william/Library/Python/3.8/bin # Add pip to path
-
-export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=' -p /usr/bin/python3 '
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
